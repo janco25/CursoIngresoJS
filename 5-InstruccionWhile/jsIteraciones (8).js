@@ -7,7 +7,22 @@ function Mostrar()
 	
 	var respuesta='si';
 
-
+    while(respuesta=="si"){
+        n= parseInt(prompt("ingrese numero"));
+        if(n>0){
+            positivo+=n;
+            alert("positivo");
+        }else{
+            if(n<0){
+                 negativo*=n;
+               alert("negativo");     
+            }
+           
+        }
+        
+        contador++;
+        respuesta=prompt("ingresar si o no");
+    }
 document.getElementById('suma').value=positivo;
 document.getElementById('producto').value=negativo;
 
